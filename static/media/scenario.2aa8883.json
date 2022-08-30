@@ -396,7 +396,7 @@
                                                                                             }
                                                                                           ],
                                                                                           "_mark": "mark_99m5c2c84m59131989rk",
-                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                                                                                          "_content": "[LABEL ...{this.dudesBg='bg/location3_3.jpg';this.dudesData=null;this.dudesCtg=1;this.dudesCnt=6;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                                                                                         }
                                                                                       ],
                                                                                       "_mark": "",
@@ -544,7 +544,7 @@
                             }
                           ],
                           "_mark": "START",
-                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro][ANSWERSORDER ON]"
+                          "_content": "[LABEL Симулятор Чувака (версия: 1.{this.game_version})\nИнтерактивный видеоквест о приключениях чувака.][BGNDIMAGE poster.jpg][AMBIENT intro]"
                         },
                         {
                           "node": [
@@ -602,7 +602,7 @@
                                             }
                                           ],
                                           "_mark": "mark_8i78i65qrm7jv0s6a437",
-                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=1;''}{script dude_show.qsp}]"
+                                          "_content": "[LABEL Здарова, братухан! Выручи монетой?{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=3;this.dudesCnt=1;''}{script dude_show.qsp}]"
                                         }
                                       ],
                                       "_mark": "",
@@ -646,7 +646,7 @@
                                                     }
                                                   ],
                                                   "_mark": "mark_26hez718lm5g88ibsc8o",
-                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCnt=3;''}{script dude_show.qsp}]"
+                                                  "_content": "[LABEL Братан, слух, подь сюды, дело есть...{this.dudesData=null;this.dudesOX=220;this.dudesOY=0;this.dudesSX=1;this.dudesSY=1;this.dudesCtg=2;this.dudesCnt=3;''}{script dude_show.qsp}]"
                                                 }
                                               ],
                                               "_mark": "",
@@ -717,24 +717,20 @@
                     {
                       "node": [
                         {
-                          "_mark": "mark_5i558f76n5f1iu6kiw33",
-                          "_content": "[LABEL ][GOTO dude_generator]"
-                        }
-                      ],
-                      "_mark": "dude_generator_next",
-                      "_content": "[LABEL Заново]"
-                    },
-                    {
-                      "node": [
-                        {
                           "node": [
                             {
                               "_mark": "",
-                              "_content": "[LABEL ][GOTO dude_generator_next]"
+                              "_content": "[LABEL ][GOTO dude_generator_again]"
                             },
                             {
+                              "node": [
+                                {
+                                  "_mark": "mark_x873ca8518w0236273u3",
+                                  "_content": "[LABEL ][GOTO dude_generator]"
+                                }
+                              ],
                               "_mark": "",
-                              "_content": "[LABEL ][GOTO dude_generator_again]"
+                              "_content": "[LABEL Другие]"
                             }
                           ],
                           "_mark": "mark_br5c8k8j9y801u4057dz",
@@ -743,10 +739,60 @@
                       ],
                       "_mark": "dude_generator_again",
                       "_content": "[LABEL Эти же]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_fu8079797p9u8m5e612r",
+                          "_content": "[LABEL {this.dudesCtg=2;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Гопники]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_td27t7x3vy28x50hlc46",
+                          "_content": "[LABEL {this.dudesCtg=3;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Бомжы]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_33ath74m5a41q61bu55x",
+                          "_content": "[LABEL {this.dudesCtg=1;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Грузчики]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_m82u2l32u3z685s5o7ax",
+                          "_content": "[LABEL {this.dudesCtg=4;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Обычные]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_5i558f76n5f1iu6kiw33",
+                          "_content": "[LABEL {this.dudesCtg=0;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "dude_generator_next",
+                      "_content": "[LABEL Всякие разные]"
                     }
                   ],
                   "_mark": "dude_generator",
-                  "_content": "[LABEL {this.dudesBg=null;this.dudesData=null;this.dudesCnt=5;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
+                  "_content": "[LABEL {this.dudesBg=null;this.dudesData=null;this.dudesCnt=9;this.dudesOX=220;this.dudesOY=0;this.dudesSX=0.8;this.dudesSY=0.8;''}{script dude_show.qsp}]"
                 }
               ],
               "_mark": "",
