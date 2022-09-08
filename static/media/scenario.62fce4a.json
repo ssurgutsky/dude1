@@ -713,7 +713,67 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_pkg54f4bbgd4vr61btr1",
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "node": [
+                                                                    {
+                                                                      "node": [
+                                                                        {
+                                                                          "node": [
+                                                                            {
+                                                                              "node": [
+                                                                                {
+                                                                                  "_mark": "mark_6ilq2t9v0ktxz001h3dv",
+                                                                                  "_content": "[LABEL ][GOTO MENU]"
+                                                                                }
+                                                                              ],
+                                                                              "_mark": "tolyan_go_away",
+                                                                              "_content": "[LABEL Уйду]"
+                                                                            }
+                                                                          ],
+                                                                          "_mark": "mark_60myyi79pv2te39t3xd5",
+                                                                          "_content": "[LABEL {this.tolyan_home_location=3;''}{script tolyan_show.qsp}{script dude_show.qsp}]"
+                                                                        }
+                                                                      ],
+                                                                      "_mark": "",
+                                                                      "_content": "[LABEL >>>]"
+                                                                    }
+                                                                  ],
+                                                                  "_mark": "mark_87bkjw58ipfr8ah147gq",
+                                                                  "_content": "[LABEL {this.tolyan_home_location=2;''}{script tolyan_show.qsp}{script dude_show.qsp}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL Зайду внутрь]"
+                                                            },
+                                                            {
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ][GOTO tolyan_go_away]"
+                                                            }
+                                                          ],
+                                                          "_mark": "tolyan_at_home",
+                                                          "_content": "[LABEL {this.tolyan_home_location=1;''}{script tolyan_show.qsp}{script dude_show.qsp}]"
+                                                        }
+                                                      ],
+                                                      "_mark": "",
+                                                      "_content": "[LABEL Позвоню в дверь]"
+                                                    },
+                                                    {
+                                                      "_mark": "",
+                                                      "_content": "[LABEL ][GOTO tolyan_go_away]"
+                                                    }
+                                                  ],
+                                                  "_mark": "location4",
+                                                  "_content": "[LABEL ...][BGNDIMAGE bg/location4_1.jpg]"
+                                                },
+                                                {
+                                                  "node": [
+                                                    {
+                                                      "node": [
+                                                        {
+                                                          "_mark": "mark_99ibu8kd0723a103rrgm",
                                                           "_content": "[LABEL ][GOTO MENU]"
                                                         }
                                                       ],
@@ -721,7 +781,7 @@
                                                       "_content": "[LABEL Ладно]"
                                                     }
                                                   ],
-                                                  "_mark": "location4",
+                                                  "_mark": "location5",
                                                   "_content": "[LABEL Закрыто...{script location_show.qsp}]"
                                                 }
                                               ],
@@ -845,8 +905,20 @@
                                                     {
                                                       "node": [
                                                         {
-                                                          "_mark": "mark_8cg8tv1579u80nwsv334",
-                                                          "_content": "[LABEL <Enter text here>]"
+                                                          "node": [
+                                                            {
+                                                              "node": [
+                                                                {
+                                                                  "_mark": "mark_ztv2cj3535nbc1g7lmcr",
+                                                                  "_content": "[LABEL {this.player_move_type == 1 ? '[GOTO TRIP_QUESTS]' : '[GOTO TRIP_COMPLETE]'}]"
+                                                                }
+                                                              ],
+                                                              "_mark": "",
+                                                              "_content": "[LABEL ]"
+                                                            }
+                                                          ],
+                                                          "_mark": "mark_txlav5szh69jaqdh89y9",
+                                                          "_content": "[LABEL {this.newlocation=5;''}{script trip_calc.qsp}Карта{script show_map.qsp}]"
                                                         }
                                                       ],
                                                       "_mark": "",
@@ -1223,6 +1295,36 @@
                       ],
                       "_mark": "",
                       "_content": "[LABEL Бандит]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_t7ap7427q65183296ey5",
+                          "_content": "[LABEL {this.dudesCtg=6;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Толян]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_vtijvkg54d647dgtf802",
+                          "_content": "[LABEL {this.dudesCtg=7;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Барыги]"
+                    },
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_7q5a2k6g8n3t50mr05zl",
+                          "_content": "[LABEL {this.dudesCtg=8;''}][GOTO dude_generator]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL Преподы]"
                     },
                     {
                       "node": [
